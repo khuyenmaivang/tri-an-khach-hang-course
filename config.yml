@@ -1,0 +1,16 @@
+title: tri-an-khach-hang
+description: sức khỏe là vàng
+template:
+  repo: tri-an-khach-hang-template
+  name: tri-an-khach-hang
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
